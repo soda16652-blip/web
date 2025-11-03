@@ -1,0 +1,52 @@
+body{
+    background:whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+.carousel-item img{
+    height: 260px;
+    display: block;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    color: black;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    padding: 0;
+    border: 0;
+    gap: 25px;
+}
+.card {
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+@media screen and (min-width : 480px) {
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    } 
+    .carousel-item img{
+        height: 300px;
+    }
+}
+
+@media screen and (min-width : 730px) {
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+    } 
+    .carousel-item img{
+        height: 480px;
+        width: 70%;
+    }
+}
